@@ -1,0 +1,29 @@
+import Image from 'next/image'
+import React from 'react'
+
+import bannerImage from '../public/images/banner.png'
+import Link from 'next/link'
+
+const Banner = () => {
+    return (
+        <div className='container mx-auto flex flex-col md:flex-row gap-20 items-center justify-between p-4 h-[80vh]'>
+            <div className='space-y-5'>
+                <h1 className='text-[70px] text-white font-bold leading-20 font-display'>Transform Your <span className='text-primary'>Nursing Care Operations</span> with Ease.</h1>
+                <h3 className='text-[22px] text-white font-light font-secondary'><span className='font-bold'>All-in-one</span> platform to <span className='font-bold'>manage clients, employees, appointments,</span> and <span className='font-bold'>forms.</span> Built for modern <span className='font-bold'>domiciliary</span> and <span className='font-bold'>home care </span>services.</h3>
+                <div className='gap-5 flex'>
+                    <Link className="btn-primary" href='#'>
+                        Book An Appointment
+                    </Link>
+                    <Link className="btn-primary" href='#'>
+                        Contact
+                    </Link>
+                </div>
+            </div>
+            <div>
+                <Image src={bannerImage} alt='Banner Image' width={1000} />
+            </div>
+        </div>
+    )
+}
+
+export default Banner
