@@ -5,8 +5,7 @@ import image from "@/public/images/pricing.png";
 const Pricing = () => {
     return (
         <section className="relative mb-[550px] md:mb-72">
-            {/* Background Section */}
-            <div className="relative h-[300px] md:h-[400px] lg:h-[500px]">
+            <div className="relative h-[300px] md:h-[350px] lg:h-[500px]">
                 <div className="absolute inset-0">
                     <Image
                         src={image}
