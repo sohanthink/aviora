@@ -1,5 +1,8 @@
 import React from 'react';
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import logo from '../public/images/logowhite.png';
+import Image from 'next/image';
+
 
 const Footer = () => {
     return (
@@ -7,7 +10,7 @@ const Footer = () => {
             <div className="container mx-auto px-10">
                 <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                     <div className="text-center md:text-left">
-                        <h2 className="text-3xl font-bold text-white">aviora</h2>
+                        <Image src={logo} alt="logo" width={150} />
                         <p className="text-sm mt-2 text-gray-400">
                             Transforming nursing care operations with ease.
                         </p>
@@ -28,11 +31,11 @@ const Footer = () => {
                             <FaLinkedinIn />
                         </a>
                         <a
-                            href="#"
+                            href="https://wa.me/message/3V4KLRGQ6IBEP1"
                             className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-primary transition-colors"
-                            aria-label="Twitter"
+                            aria-label="WhatsApp"
                         >
-                            <FaTwitter />
+                            <FaWhatsapp />
                         </a>
                         <a
                             href="#"

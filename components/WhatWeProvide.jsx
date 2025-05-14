@@ -41,14 +41,14 @@ const WhatWeProvide = () => {
                     Managing Care <span className="font-bold">Shouldn't Be Complicated.</span>
                 </p>
 
-                <div className='flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-8 space-y-4 md:space-y-0 mb-10 max-w-3xl bg-[#E4E4E40D] p-10'>
+                <div className='flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-8 space-y-4 md:space-y-0 mb-10 max-w-3xl bg-[#E4E4E40D] p-10 z-50 rounded-lg'>
                     <div className=' md:w-1/2 w-full'>
                         <Image src={provideimg} alt="Provide Image" width={700} />
                     </div>
                     <div className='text-white flex items-start flex-col space-y-2 md:w-1/2 w-full'>
-                        <span className="bg-primary px-2 py-1 text-sm rounded-full inline-block text-start">Branded</span>
-                        <h1 className='text-start font-primary font-bold text-3xl'>Get Your First Free Branded Website</h1>
-                        <p className='text-start font-secondary font-light text-[17px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <span className="bg-primary px-2 py-1 text-sm rounded-full inline-block text-start">Claim your package!</span>
+                        <h1 className='text-start font-primary font-bold text-[25px] leading-7'>Personal Website + Management in one place</h1>
+                        <p className='text-start font-secondary font-light text-[16px]'>Everything you need in one place: A professional website, fully branded for your nursing services, plus easy-to-use tools to manage bookings, clients, and etc updates.</p>
                     </div>
                 </div>
 

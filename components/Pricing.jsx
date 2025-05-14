@@ -32,8 +32,8 @@ const Pricing = () => {
                     <div className="bg-[#E4E4E40D] p-10 text-center text-white md:col-span-1">
                         <h2 className="text-lg font-bold font-secondary">Starting From</h2>
                         <div className="flex items-center justify-center space-x-2 mt-4">
-                            <span className="text-5xl font-bold font-secondary">£1099</span>
-                            <span className="text-gray-400 line-through">£1590</span>
+                            <span className="text-5xl font-bold font-secondary">£1599</span>
+                            <span className="text-gray-400 line-through">£2099</span>
                         </div>
                         <button className="btn-secondary mt-6">
                             Book A Meeting Call
@@ -42,24 +42,24 @@ const Pricing = () => {
 
                     <div className='bg-[#E4E4E40D] p-8 text-white md:col-span-2 flex flex-col justify-center rounded-lg'>
                         <p className="text-gray-300 mt-4 font-secondary">
-                            Access these features when you get this pricing package for your business.
+                            Whether you need additional features, custom workflows, or extra pages for your website—we’ll build it. Our platform evolves with your goals, ensuring every detail aligns with your nursing practice’s unique demands.
                         </p>
                         <ul className="mt-6 space-y-5">
                             <li className="flex items-center space-x-2">
                                 <span className="w-5 h-5 bg-green-500 rounded-full"></span>
-                                <span className='font-secondary font-light text-[18px]'>Type 1 details about advantage</span>
+                                <span className='font-secondary font-light text-[18px]'>Add and manage clients and employees easily.</span>
                             </li>
                             <li className="flex items-center space-x-2">
                                 <span className="w-5 h-5 bg-green-500 rounded-full"></span>
-                                <span className='font-secondary font-light text-[18px]'>Type 2 details about advantage</span>
+                                <span className='font-secondary font-light text-[18px]'>Create and submit forms for compliance and documentation.</span>
                             </li>
                             <li className="flex items-center space-x-2">
                                 <span className="w-5 h-5 bg-green-500 rounded-full"></span>
-                                <span className='font-secondary font-light text-[18px]'>Type 3 details about advantage</span>
+                                <span className='font-secondary font-light text-[18px]'>Track all appointments for staff and clients.</span>
                             </li>
                             <li className="flex items-center space-x-2">
                                 <span className="w-5 h-5 bg-green-500 rounded-full"></span>
-                                <span className='font-secondary font-light text-[18px]'>24/7 support and consulting</span>
+                                <span className='font-secondary font-light text-[18px]'>Employees access only their assigned clients for data protection.</span>
                             </li>
                         </ul>
                     </div>

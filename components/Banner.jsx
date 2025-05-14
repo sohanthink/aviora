@@ -3,6 +3,8 @@ import React from 'react'
 
 import bannerImage from '../public/images/banner.png'
 import Link from 'next/link'
+import { MdOutlineAlternateEmail, MdOutlineMailOutline } from "react-icons/md";
+
 
 const Banner = () => {
     return (
@@ -18,8 +20,13 @@ const Banner = () => {
                     <Link className="btn-primary" href='#'>
                         Book An Appointment
                     </Link>
-                    <Link className="btn-secondary" href='#'>
-                        Contact
+                    <Link
+                        href="mailto:info@avioraportal.com"
+                        className="btn-secondary flex items-center gap-2"
+                        style={{ textDecoration: 'none' }}
+                    >
+                        <MdOutlineMailOutline />
+                        Email
                     </Link>
                 </div>
             </div>
