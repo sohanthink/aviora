@@ -9,7 +9,7 @@ import icon6 from '@/public/icons/icon6.png'
 
 const Features = () => {
     return (
-        <section className="py-16 pb-20 md:pb-56 container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 pb-12 md:pb-44 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center relative flex flex-col items-center justify-center">
                 <h1 className="text-[32px] sm:text-[40px] md:text-[56px] text-white font-bold leading-tight md:leading-[70px] font-display mb-4">
                     Features in Detail
@@ -19,12 +19,12 @@ const Features = () => {
                 </p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto'>
-                <Card title='Client Management' icon={icon1} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the" />
-                <Card title='Employee Scheduling' icon={icon2} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the" />
-                <Card title='Form Creation & Submission' icon={icon3} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the" />
-                <Card title='Role-Based Access Control' icon={icon4} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the" />
-                <Card title='Secure Data Storage' icon={icon5} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the" />
-                <Card title='Easy Client Communication' icon={icon6} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the" />
+                <Card title='Client Management' icon={icon1} description="Centralize all client information in one secure, easy-to-access system. Track histories and forms with data, medications, and important contacts. Quickly update records and access critical client details when you need them most." />
+                <Card title='Employee Scheduling' icon={icon2} description="Streamline your staff management with intelligent scheduling tools. Create, edit, and optimize shifts in seconds, reduce conflicts with automated availability tracking, and ensure perfect coverage for every shift." />
+                <Card title='Form Creation & Submission' icon={icon3} description="Digitize and customize all your essential nursing forms with our intuitive form builder. Create some common Forms and submit it to users who need it. Easy and reliable soluations." />
+                <Card title='Role-Based Access Control' icon={icon4} description="Protect sensitive data with customizable permission levels. Administrators control exactly what each team member can view and edit, ensuring compliance while maintaining workflow efficiency. Perfect for maintaining HIPAA and privacy standards." />
+                <Card title='Secure Data Storage' icon={icon5} description="Enterprise-grade encryption keeps all client and operational data protected. Cloud-based storage with automatic backups means information is always safe and accessible from any authorized device, without compromising security." />
+                <Card title='Telehealth & Remote Monitoring' icon={icon6} description="Enhance patient care with integrated telehealth capabilities. Conduct virtual visits, monitor vital signs remotely, and share real-time updates with care teams—keeping clients connected even when they’re not on-site." />
             </div>
         </section>
     )

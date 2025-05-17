@@ -32,7 +32,7 @@ const features = [
 
 const WhatWeProvide = () => {
     return (
-        <section className="py-16 pb-20 md:pb-56 container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 pb-12 md:pb-44 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center relative flex flex-col items-center justify-center">
                 <h1 className="text-[32px] sm:text-[40px] md:text-[56px] text-white font-bold leading-tight md:leading-[70px] font-display mb-4">
                     What We Provide

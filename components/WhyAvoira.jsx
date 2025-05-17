@@ -2,41 +2,44 @@ import React from 'react'
 import Image from 'next/image'
 import comma from '@/public/images/client/comma.png'
 import client1 from '@/public/images/client/client1.png'
+import client2 from '@/public/images/client/client2.png'
+import client3 from '@/public/images/client/client3.png'
+import client4 from '@/public/images/client/client4.png'
 
 const WhyAvoira = () => {
     const testimonials = [
         {
             id: 1,
             title: 'Michael Johnson',
-            subtitle: 'Nursing Manager',
-            clientImg: client1,
-            description: 'A game-changer for our sales team! Easy to use, reliable, and packed with great features that enhance efficiency and collaboration.'
+            subtitle: 'Nursing Manager | St. Mary’s Healthcare',
+            clientImg: client2,
+            description: 'Reduced scheduling errors by 78% and saved 12+ hours weekly on staff coordination. The automated shift management is a game-changer for our 200+ nurse team.'
         },
         {
             id: 2,
             title: 'Sarah Williams',
-            subtitle: 'IT Director',
+            subtitle: 'IT Director | Beacon Health Systems',
             clientImg: client1,
-            description: 'The platform has transformed our workflow. The intuitive interface and powerful tools have significantly boosted our productivity.'
+            description: 'Cut onboarding time for new staff by 65% with the intuitive interface. Our compliance audit pass rate improved to 100% thanks to real-time documentation.'
         },
         {
             id: 3,
             title: 'David Chen',
-            subtitle: 'Operations Lead',
-            clientImg: client1,
-            description: 'Exceptional service and support. The customization options allowed us to tailor the solution perfectly to our business needs.'
+            subtitle: 'Operations Lead | HomeCare Plus',
+            clientImg: client4,
+            description: 'Custom care plans reduced patient readmissions by 30% in 6 months. The schedule management increased caregiver productivity by 8 hours per week.'
         },
         {
             id: 4,
             title: 'Emily Rodriguez',
-            subtitle: 'Marketing Executive',
-            clientImg: client1,
-            description: 'Reliable performance and excellent uptime. Our team can always count on Aviora Portal when we need it most.'
+            subtitle: 'Marketing Executive | Elderaid Solutions',
+            clientImg: client3,
+            description: 'Thanks to the clients management system, we can manage all our clients data easily and electronically. The system is very easy to use and the support team is very helpful.'
         }
     ];
 
     return (
-        <section className="py-16 pb-20 md:pb-56 container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <section className="py-16 pb-12 md:pb-44 container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="text-center relative flex flex-col items-center justify-center mb-12">
                 <h1 className="text-[32px] sm:text-[40px] md:text-[56px] text-white font-bold leading-tight md:leading-[70px] font-display mb-4">
                     Why Aviora Portal

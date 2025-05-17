@@ -17,16 +17,16 @@ const Banner = () => {
                     <span className='font-bold'>All-in-one</span> platform to <span className='font-bold'>manage clients, employees, appointments,</span> and <span className='font-bold'>forms.</span> Built for modern <span className='font-bold'>domiciliary</span> and <span className='font-bold'>home care </span>services.
                 </h3>
                 <div className='gap-3 md:gap-5 flex flex-col md:flex-row justify-center md:justify-start'>
-                    <Link className="btn-primary" href='#'>
+                    {/* <Link className="btn-primary" href='#'>
                         Book An Appointment
-                    </Link>
+                    </Link> */}
                     <Link
                         href="mailto:info@avioraportal.com"
                         className="btn-secondary flex items-center gap-2"
                         style={{ textDecoration: 'none' }}
                     >
                         <MdOutlineMailOutline />
-                        Email
+                        Email Us
                     </Link>
                 </div>
             </div>
