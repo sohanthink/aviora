@@ -23,7 +23,7 @@ const Pricing = () => {
         ],
         stats: [
             { value: '87%', label: 'Reduction in admin time' },
-            { value: '62%', label: 'Fewer scheduling errors' },
+            // { value: '62%', label: 'Fewer scheduling errors' },
             { value: '4.9/5', label: 'User satisfaction' }
         ]
     };
@@ -57,31 +57,24 @@ const Pricing = () => {
             <div className="container mx-auto max-w-6xl absolute top-[288%] md:top-[135%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 md:p-0">
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3 rounded-xl overflow-hidden shadow-2xl">
                     <div className="bg-[#E4E4E40D] p-8 md:p-10 text-center text-white flex flex-col items-center justify-center">
-                        <h2 className="text-xl font-bold font-primary mb-2">PROFESSIONAL PLAN</h2>
-                        <div className="flex items-end justify-center space-x-2 my-4">
+                        <h2 className="text-xl font-bold font-primary mb-2">Starting From</h2>
+                        <div className="flex items-end justify-center space-x-2 my-2">
                             <span className="text-5xl font-bold font-secondary">£{pricingData.basePlan.price}</span>
                             <span className="text-gray-400 line-through pb-1">£{pricingData.basePlan.originalPrice}</span>
                         </div>
                         <span className='font-bold font-primary text-green-400'>SAVE {pricingData.savings}</span>
                         <span className='text-sm text-gray-300 mt-1'>billed {pricingData.basePlan.period}</span>
 
-                        <div className="mt-6 mb-4 grid grid-cols-2 gap-2 w-full">
-                            {pricingData.stats.map((stat, index) => (
-                                <div key={index} className="bg-[#ffffff08] p-2 rounded">
-                                    <div className="text-2xl font-bold text-green-400">{stat.value}</div>
-                                    <div className="text-xs text-gray-300">{stat.label}</div>
-                                </div>
-                            ))}
-                        </div>
+
 
                         <Link href={pricingData.basePlan.link}>
-                            <span className="mt-6 px-8 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold transition-colors duration-300 inline-block">
+                            <span className="mt-3 px-8 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold transition-colors duration-300 inline-block">
                                 {pricingData.basePlan.cta}
                             </span>
                         </Link>
                     </div>
 
-                    {/* Features Card */}
+
                     <div className='bg-[#E4E4E40D] p-8 md:p-10 text-white md:col-span-2'>
                         <h3 className="text-xl font-bold mb-4">Everything Included:</h3>
                         <ul className="space-y-3">
@@ -92,6 +85,14 @@ const Pricing = () => {
                                 </li>
                             ))}
                         </ul>
+                        <div className="mt-6 mb-4 grid grid-cols-2 gap-2 w-full">
+                            {pricingData.stats.map((stat, index) => (
+                                <div key={index} className="bg-[#ffffff08] p-2 rounded">
+                                    <div className="text-2xl font-bold text-green-400">{stat.value}</div>
+                                    <div className="text-xs text-gray-300">{stat.label}</div>
+                                </div>
+                            ))}
+                        </div>
 
                         <div className="mt-8 pt-5 border-t border-gray-700">
                             <p className="text-gray-300">
@@ -99,6 +100,7 @@ const Pricing = () => {
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

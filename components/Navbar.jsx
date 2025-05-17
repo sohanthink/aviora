@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
         <nav className='w-full z-50 transition-all duration-300'>
             <div className="container mx-auto flex justify-between items-center px-4 py-4">
-                {/* Logo */}
+
                 <Link href="/" className="z-50">
                     <Image
                         src={logo}
@@ -43,19 +43,19 @@ const Navbar = () => {
                     />
                 </Link>
 
-                {/* Desktop Navigation */}
-                <div className="hidden md:flex items-center gap-10">
-                    <ul className="flex gap-8 font-medium">
+
+                <div className="hidden md:flex items-center justify-center gap-10">
+                    <ul className="flex gap-8">
                         {navItems.map((item) => (
                             <li key={item.id}>
-                                <a
+                                <Link
                                     href={item.href}
                                     onClick={(e) => handleNavClick(e, item.id)}
                                     className="text-white text-sm hover:text-green-400 duration-300 transition-all cursor-pointer"
                                     aria-label={item.label}
                                 >
                                     {item.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
