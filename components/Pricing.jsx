@@ -29,7 +29,7 @@ const Pricing = () => {
     };
 
     return (
-        <section className="relative mb-[1050px] md:mb-[450px]">
+        <section id='pricing' className="relative mb-[1050px] md:mb-[450px]">
             {/* Hero Background */}
             <div className="relative h-[300px] md:h-[350px] lg:h-[500px]">
                 <div className="absolute inset-0">
@@ -55,9 +55,8 @@ const Pricing = () => {
 
             {/* Pricing Card Section */}
             <div className="container mx-auto max-w-6xl absolute top-[288%] md:top-[135%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-5 md:p-0">
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-3 rounded-xl overflow-hidden shadow-2xl">
-                    {/* Price Card */}
-                    <div className="bg-[#E4E4E40D] p-8 md:p-10 text-center text-white flex flex-col items-center justify-center border-r border-gray-700">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-3 rounded-xl overflow-hidden shadow-2xl">
+                    <div className="bg-[#E4E4E40D] p-8 md:p-10 text-center text-white flex flex-col items-center justify-center">
                         <h2 className="text-xl font-bold font-primary mb-2">PROFESSIONAL PLAN</h2>
                         <div className="flex items-end justify-center space-x-2 my-4">
                             <span className="text-5xl font-bold font-secondary">£{pricingData.basePlan.price}</span>
