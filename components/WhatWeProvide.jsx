@@ -1,7 +1,10 @@
 import React from 'react';
 import { FaClipboard, FaUserFriends, FaFileAlt, FaHandshake } from 'react-icons/fa';
+import { MdCheckCircle } from 'react-icons/md';
 import provideimg from '@/public/images/whatweprovide.png';
 import Image from 'next/image';
+import Link from 'next/link';
+import { RiWhatsappLine } from "react-icons/ri";
 
 const features = [
     {
@@ -32,30 +35,59 @@ const features = [
 
 const WhatWeProvide = () => {
     return (
-        <section className="py-16 pb-12 md:pb-44 container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 pb-12 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center relative flex flex-col items-center justify-center">
                 <h1 className="text-[32px] sm:text-[40px] md:text-[56px] text-white font-bold leading-tight md:leading-[70px] font-display mb-4">
-                    What We Provide
+                    All-in-One Solution
                 </h1>
                 <p className="text-[16px] sm:text-[18px] md:text-[22px] text-gray-300 font-light font-secondary mb-8 sm:mb-12">
-                    Managing Care <span className="font-bold">Shouldn't Be Complicated.</span>
+                    Managing Care <span className="font-bold">Shouldn't Be Complicated.</span> Get your <span className="font-bold">website + management portal</span> in one seamless, <span className="font-bold">fully bespoke</span> package.
                 </p>
 
-                <div className='flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-8 space-y-4 md:space-y-0 mb-10 max-w-3xl bg-[#E4E4E40D] p-10 z-50 rounded-lg'>
-                    <div className=' md:w-1/2 w-full'>
-                        <Image src={provideimg} alt="Provide Image" width={700} />
+                <div className='flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-8 space-y-6 md:space-y-0 mb-12 max-w-5xl bg-gradient-to-br from-[#E4E4E40D] to-[#E4E4E405] border border-primary/20 p-8 md:p-12 z-50 rounded-xl shadow-lg'>
+                    <div className='md:w-1/2 w-full flex justify-center'>
+                        <Image src={provideimg} alt="Website and Portal Integration" width={700} className="rounded-lg" />
                     </div>
-                    <div className='text-white flex items-start flex-col space-y-2 md:w-1/2 w-full'>
-                        <span className="bg-primary px-2 py-1 text-sm rounded-full inline-block text-start">Claim your package!</span>
-                        <h1 className='text-start font-primary font-bold text-[25px] leading-7'>Personal Website + Management in one place</h1>
-                        <p className='text-start font-secondary font-light text-[16px]'>Everything you need in one place: A professional website, fully branded for your nursing services, plus easy-to-use tools to manage bookings, clients, and etc updates.</p>
+                    <div className='text-white flex items-start flex-col space-y-4 md:w-1/2 w-full'>
+                        <span className="bg-primary px-3 py-1.5 text-sm rounded-full inline-block text-start font-semibold">Included in Every Package</span>
+                        <h1 className='text-start font-primary font-bold text-[28px] md:text-[32px] leading-tight'>Your Website + Management Portal in One Place</h1>
+                        <p className='text-start font-secondary font-light text-[12px] md:text-[16px] leading-relaxed'>
+                            Get a <span className="font-bold">professional, fully-branded website</span> (domain.com) and your <span className="font-bold">complete management portal</span> (domain.com/login) all in one integrated solution. We handle everything from design to deployment.
+                        </p>
+                        <div className='space-y-2 w-full'>
+                            <div className='flex items-center gap-2 text-gray-300'>
+                                <MdCheckCircle className='text-primary flex-shrink-0' />
+                                <span className='font-light text-sm md:text-base'>Professional website with your branding</span>
+                            </div>
+                            <div className='flex items-center gap-2 text-gray-300'>
+                                <MdCheckCircle className='text-primary flex-shrink-0' />
+                                <span className='font-light text-sm md:text-base'>Integrated admin dashboard portal</span>
+                            </div>
+                            <div className='flex items-center gap-2 text-gray-300'>
+                                <MdCheckCircle className='text-primary flex-shrink-0' />
+                                <span className='font-light text-sm md:text-base'>Fully bespoke and customizable</span>
+                            </div>
+                            <div className='flex items-center gap-2 text-gray-300'>
+                                <MdCheckCircle className='text-primary flex-shrink-0' />
+                                <span className='font-light text-sm md:text-base'>Complete setup and deployment included</span>
+                            </div>
+                        </div>
+                        {/* <Link
+                            href="https://wa.me/message/3V4KLRGQ6IBEP1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg font-bold flex items-center gap-2 transition-colors duration-300 mt-4"
+                        >
+                            <RiWhatsappLine className="text-lg" />
+                            Learn More
+                        </Link> */}
                     </div>
                 </div>
 
-                <div className="hidden md:block absolute top-4/5 left-[9%] border-dashed border-1 border-white w-[82%] z-0"></div>
+                <div className="hidden md:block absolute top-[85%] left-[9%] border-dashed border-1 border-white w-[82%] z-0"></div>
 
                 <div
-                    className="hidden md:block absolute top-[74%] left-1/2 border-dashed border border-white w-[2px] h-[11%] z-0 transform -translate-x-1/2 -translate-y-1/2"
+                    className="hidden md:block absolute top-[80%] left-1/2 border-dashed border border-white w-[2px] h-[11%] z-0 transform -translate-x-1/2 -translate-y-1/2"
                 ></div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">

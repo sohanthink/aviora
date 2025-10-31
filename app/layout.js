@@ -13,9 +13,29 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata = {
-  title: "Transforming nursing care operations with ease.",
+  title:
+    "Bespoke Nursing Care Management System - Fully Customizable | Aviora Portal",
   description:
-    "All-in-one nursing software to streamline operations, ensure compliance, and improve patient care. Schedule staff, manage clients, and submit forms securely. HIPAA-compliant & trusted by healthcare professionals. ",
+    "Fully bespoke nursing care management system with GPS location tracking, attendance system, care plans, mobile app (under development), and website+portal setup. Custom-built for your business with client management, employee scheduling, appointment booking with location tracking, form submission, and comprehensive admin dashboard. Merchant/admin mobile app coming soon. Starting from £1,499/year.",
+  keywords: [
+    "nursing care management system",
+    "bespoke care management software",
+    "attendance tracking system",
+    "care plans software",
+    "nursing mobile app",
+    "healthcare management portal",
+    "client management system",
+    "employee scheduling software",
+    "secure nursing software",
+    "customizable care management",
+    "nursing care platform",
+    "home care management",
+    "domiciliary care software",
+    "clock in clock out system",
+    "nursing attendance matrix",
+    "care management website",
+    "healthcare portal development",
+  ],
 };
 
 export default function RootLayout({ children }) {

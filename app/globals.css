@@ -8,7 +8,7 @@ body {
 
 @layer base {
   li {
-    @apply text-3xl font-bold;
+    @apply text-base md:text-xl font-bold;
   }
 }
 @layer components {
