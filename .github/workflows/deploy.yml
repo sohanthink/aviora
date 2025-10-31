@@ -1,0 +1,42 @@
+name: Deploy Next.js to VPS (avioraportal)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # This checkout step isn't needed, so it's removed.
+      
+      - name: Connect to VPS and Deploy
+        uses: appleboy/ssh-action@v1.0.3  # Pinned to a stable version
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: 22
+
+          script: |
+            set -e # <-- Fail-fast script
+            
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            
+            cd /var/www/avioraportal
+            git pull origin main
+            
+            if [ -n "${{ secrets.VPS_ENV_FILE }}" ]; then
+              echo "Creating .env.local file..."
+              echo "${{ secrets.VPS_ENV_FILE }}" > .env.local
+            else
+              echo "No .env file secret found. Skipping."
+            fi
+            
+            npm ci
+            npm run build
+            
+            pm2 reload nlbusiness # <-- Zero-downtime reload
