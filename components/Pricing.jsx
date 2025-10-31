@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Pricing = () => {
     const pricingData = {
         basePlan: {
-            price: 1599,
+            price: 1499,
             originalPrice: 2099,
             period: 'yearly',
             savings: '24%',
