@@ -10,10 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # This checkout step isn't needed, so it's removed.
-      
       - name: Connect to VPS and Deploy
-        uses: appleboy/ssh-action@v1.0.3  # Pinned to a stable version
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
@@ -27,8 +25,13 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             
             cd /var/www/avioraportal
-            git pull origin main
-            
+
+            # --- THIS IS THE FIX ---
+            # Force pull the latest code and overwrite all local changes
+            git fetch --all
+            git reset --hard origin/main
+            # ---------------------
+
             if [ -n "${{ secrets.VPS_ENV_FILE }}" ]; then
               echo "Creating .env.local file..."
               echo "${{ secrets.VPS_ENV_FILE }}" > .env.local
