@@ -54,12 +54,9 @@ const Footer = () => {
                 {/* Footer Links */}
                 <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 space-y-4 md:space-y-0">
                     <div className="flex space-x-6">
-                        {/* <a href="#" className="hover:text-white transition-colors">
+                        <Link href="/privacy-policy" className="hover:text-white transition-colors">
                             Privacy Policy
-                        </a>
-                        <a href="#" className="hover:text-white transition-colors">
-                            Terms of Service
-                        </a> */}
+                        </Link>
                         <a href="mailto:info@avioraportal.com" className="hover:text-white transition-colors">
                             Contact Us
                         </a>
